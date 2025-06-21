@@ -1,1 +1,0 @@
-web: gunicorn vokativ_api:app
