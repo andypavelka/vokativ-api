@@ -12,4 +12,4 @@ def get_vokativ():
     return jsonify({"name": name, "vokativ": vokativ})
 
 if __name__ == '__main__':
-    app.run()
+    pass  # nebo nic
