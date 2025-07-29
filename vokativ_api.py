@@ -8,7 +8,7 @@ vokativ_dict = {
     "Jan": "Jane", "Petr": "Petře", "Pavel": "Pavle", "Tomáš": "Tomáši",
     "Jiří": "Jiří", "Martin": "Martine", "Miroslav": "Miroslave", "Jaroslav": "Jaroslave",
     "František": "Františku", "Josef": "Josefe", "David": "Davide", "Michal": "Michale",
-    "Lukáš": "Lukáši", "Jakub": "Jakube", "Milan": "Milane", "Václav": "Václave",
+    "Lukáš": "Lukáši", "Lukas": "Lukasi", "Jakub": "Jakube", "Milan": "Milane", "Václav": "Václave",
     "Daniel": "Daniele", "Adam": "Adame", "Ondřej": "Ondřeji", "Radek": "Radku",
     "Marek": "Marku", "Roman": "Romane", "Aleš": "Aleši", "Zdeněk": "Zdeňku",
     "Stanislav": "Stanislave", "Robert": "Roberte", "Richard": "Richarde",
@@ -16,6 +16,7 @@ vokativ_dict = {
     "Antonín": "Antoníne", "Libor": "Libore", "Vojtěch": "Vojtěchu",
     "Karel": "Karle", "Jindřich": "Jindřichu", "Bohuslav": "Bohuslave",
     "Rostislav": "Rostislave", "Bohumil": "Bohumile", "Oldřich": "Oldřichu",
+    "Patrik": "Patriku", "Juraj": "Juraji",
 
     # Ženská jména
     "Jana": "Jano", "Marie": "Marie", "Eva": "Evo", "Anna": "Anno",
@@ -26,8 +27,11 @@ vokativ_dict = {
     "Monika": "Moniko", "Pavla": "Pavlo", "Lucie": "Lucie", "Ivana": "Ivano",
     "Dagmar": "Dagmar", "Jitka": "Jitko", "Andrea": "Andreo", "Radka": "Radko",
     "Markéta": "Markéto", "Simona": "Simono", "Klára": "Kláro", "Nikola": "Nikolo",
-    "Irena": "Ireno", "Milada": "Milado", "Růžena": "Růženo", "Vlasta": "Vlasto"
+    "Irena": "Ireno", "Milada": "Milado", "Růžena": "Růženo", "Vlasta": "Vlasto",
+    "Iveta": "Iveto", "Mária": "Mário", "Pavlína": "Pavlíno", "Denisa": "Deniso",
+    "Ilona": "Ilono", "Silvie": "Silvie"
 }
+
 @app.route('/api/vokativ')
 def get_vokativ():
     name = request.args.get('name', '').strip()
@@ -35,4 +39,4 @@ def get_vokativ():
     return jsonify({"name": name, "vokativ": vokativ})
 
 if __name__ == '__main__':
-    pass  # nebo nic
+    pass
