@@ -5,31 +5,32 @@ app = Flask(__name__)
 
 vokativ_dict = {
     # Mužská jména
-    "Jan": "Jane", "Petr": "Petře", "Pavel": "Pavle", "Tomáš": "Tomáši",
-    "Jiří": "Jiří", "Martin": "Martine", "Miroslav": "Miroslave", "Jaroslav": "Jaroslave",
-    "František": "Františku", "Josef": "Josefe", "David": "Davide", "Michal": "Michale",
-    "Lukáš": "Lukáši", "Lukas": "Lukasi", "Jakub": "Jakube", "Milan": "Milane", "Václav": "Václave",
-    "Daniel": "Daniele", "Adam": "Adame", "Ondřej": "Ondřeji", "Radek": "Radku",
-    "Marek": "Marku", "Roman": "Romane", "Aleš": "Aleši", "Zdeněk": "Zdeňku",
-    "Stanislav": "Stanislave", "Robert": "Roberte", "Richard": "Richarde",
-    "Filip": "Filipe", "Vlastimil": "Vlastimile", "Ladislav": "Ladislave",
-    "Antonín": "Antoníne", "Libor": "Libore", "Vojtěch": "Vojtěchu",
-    "Karel": "Karle", "Jindřich": "Jindřichu", "Bohuslav": "Bohuslave",
-    "Rostislav": "Rostislave", "Bohumil": "Bohumile", "Oldřich": "Oldřichu",
-    "Patrik": "Patriku", "Juraj": "Juraji",
+    "Jan": "Jane", "Petr": "Petře", "Pavel": "Pavle", "Tomáš": "Tomáši", "Tomas": "Tomasi",
+    "Jiří": "Jiří", "Jiri": "Jiri", "Jirka": "Jirko", "JIndřich": "Jindřichu", "Stanislav": "Stanislave",
+    "Miroslav": "Miroslave", "Miroslava": "Miroslavo", "Jaroslav": "Jaroslave", "František": "Františku",
+    "Josef": "Josefe", "David": "Davide", "Michal": "Michale", "Lukáš": "Lukáši", "Jakub": "Jakube",
+    "Kuba": "Kubo", "Milan": "Milane", "Václav": "Václave", "Daniel": "Dane", "Adam": "Adame",
+    "Ondřej": "Ondřeji", "Andrej": "Andreji", "Radek": "Radku", "Marek": "Marku", "Roman": "Romane",
+    "Aleš": "Aleši", "Zdeněk": "Zdeňku", "Luboš": "Luboši", "Robert": "Roberte", "Richard": "Richarde",
+    "Filip": "Filipe", "Vlastimil": "Vlastimile", "Ladislav": "Ladislavu", "Antonín": "Antoníne",
+    "Libor": "Libore", "Vojtěch": "Vojtěchu", "Karel": "Karle", "Jindřich": "Jindřichu",
+    "Bohuslav": "Bohuslave", "Rostislav": "Rostislave", "Bohumil": "Bohumile", "Oldřich": "Oldřichu",
+    "Stanislav": "Stanislave", "Samuel": "Same", "Svatopluk": "Svatopluku", "Erik": "Eriku", "Alex": "Alexi", "Luděk": "Luďku",
 
     # Ženská jména
-    "Jana": "Jano", "Marie": "Marie", "Eva": "Evo", "Anna": "Anno",
-    "Hana": "Hano", "Lenka": "Lenko", "Kateřina": "Kateřino", "Věra": "Věro",
-    "Alena": "Aleno", "Petra": "Petro", "Veronika": "Veroniko", "Tereza": "Terezo",
-    "Martina": "Martino", "Michaela": "Michaelo", "Jiřina": "Jiřino", "Božena": "Boženo",
-    "Helena": "Heleno", "Zuzana": "Zuzano", "Barbora": "Barbaro", "Kristýna": "Kristýno",
-    "Monika": "Moniko", "Pavla": "Pavlo", "Lucie": "Lucie", "Ivana": "Ivano",
-    "Dagmar": "Dagmar", "Jitka": "Jitko", "Andrea": "Andreo", "Radka": "Radko",
-    "Markéta": "Markéto", "Simona": "Simono", "Klára": "Kláro", "Nikola": "Nikolo",
-    "Irena": "Ireno", "Milada": "Milado", "Růžena": "Růženo", "Vlasta": "Vlasto",
-    "Iveta": "Iveto", "Mária": "Mário", "Pavlína": "Pavlíno", "Denisa": "Deniso",
-    "Ilona": "Ilono", "Silvie": "Silvie"
+    "Jana": "Jano", "Marie": "Marie", "Eva": "Evo", "Anna": "Anno", "Anna": "Anno",
+    "Hana": "Hano", "Lenka": "Lenko", "Kateřina": "Kateřino", "Věra": "Věro", "Alena": "Aleno",
+    "Petra": "Petro", "Veronika": "Veroniko", "Tereza": "Terezo", "Martina": "Martino",
+    "Michaela": "Michaelo", "Jiřina": "Jiřino", "Božena": "Boženo", "Helena": "Heleno",
+    "Zuzana": "Zuzano", "Barbora": "Barbaro", "Kristýna": "Kristýno", "Monika": "Moniko",
+    "Pavla": "Pavlo", "Lucie": "Lucie", "Ivana": "Ivano", "Dagmar": "Dagmar", "Jitka": "Jitko",
+    "Andrea": "Andreo", "Radka": "Radko", "Markéta": "Markéto", "Simona": "Simono",
+    "Klára": "Kláro", "Klara": "Klaro", "Nikola": "Nikolo", "Irena": "Ireno", "Milada": "Milado",
+    "Růžena": "Růženo", "Vlasta": "Vlasto", "Karolína": "Karolíno", "Marta": "Marto",
+    "Dominika": "Dominiko", "Zdena": "Zdeno", "Julie": "Julie", "Magdaléna": "Magdaléno",
+    "Magda": "Magdo", "Hedvika": "Hedviko", "Naďa": "Naďo", "Bronislava": "Bronislavo",
+    "Vendula": "Vendulo", "Natálie": "Natko", "Ivona": "Ivono", "Sandra": "Sandro",
+    "Michala": "Michala", "Katarina": "Katarino", "Gita": "Gito", "Alice": "Alice", "Kamila": "Kamilo", "Marcela": "Marcelo"
 }
 
 @app.route('/api/vokativ')
